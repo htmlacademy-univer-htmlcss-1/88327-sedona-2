@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: bold;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+/**
+ *
+ * Описание фоновых параметров (цвет фона, расположение, размер и повторение фонового изображения). У каждого фона должен быть контрастный цвет текста.
+*/
+
+body{
+   font-family: "PT Sans";
+}
+
+header ul{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+button, .button, .pseudo_button{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #FFF
+}
+
+.pseudo_button{
+  font-weight: normal;
+  color: #000;
+}
+
+.visually-hidden{
+  display: none;
+}
+
+h1{
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: bold;
+}
+
+
+h2{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+section header{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: normal;
+}
+
+ul li{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+ul li h3{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+section button{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #FFF
+}
+
+input{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+address a{
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: #000
+}
+
+section.welcome{
+  background: url("../images/bg_index.jpg") no-repeat center;
+
+}
+.params .housing{
+  background: url("../images/house.svg") no-repeat center;
+}
+.params .eating{
+  background: url("../images/food.svg") no-repeat center;
+}
+.params .souvenir{
+  background: url("../images/souvenir.svg") no-repeat center;
+}
+
+.non_white_subscribe{
+  background: url("../images/bg_subscribe.jpg") no-repeat center;
+  height: 415px;
+}
+.filter{
+  background: url("../images/bg_filter.jpg") no-repeat center;
+  height: 415px;
+}
+
+.white{
+  color: #FFF
+}
+
+.navchain li{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+fieldset legend{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+fieldset label{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+}
+
+.manage_list .count{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.manage_list select{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.result_items desc{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.paging{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.paging .selected, .paging .gap{
+  color: #000;
+}
+
+.paging a{
+  color: #FFF;
+}

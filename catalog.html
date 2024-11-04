@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона. Каталог</title>
   </head>
   <body>
@@ -21,7 +22,7 @@
       </ul>
     </header>
     <main>
-      <section>
+      <section class="filter">
         <header>
           <h1>Гостиницы Седона</h1>
           <ul>
@@ -73,8 +74,8 @@
       <section>
         <header>
           <h2 class="visually-hidden">Результаты поиска</h2>
-          <div>
-            <div>Найдено: 38</div>
+          <div class="manage_list">
+            <div class="count">Найдено: 38</div>
             <div>
               <select>
                 <option value="price_asc">Сначала дешевле</option>
@@ -82,13 +83,13 @@
                 <option value="sale_desc">По величине скидки</option>
                 <option value="popularity_desc">По популярности</option>
               </select>
-              <button type="button"></button>
-              <button type="button"></button>
-              <button type="button"></button>
+              <button type="button"><img src="images/tile.svg" width="16px" height="14px"></button>
+              <button type="button"><img src="images/large.svg" width="16px" height="14px"></button>
+              <button type="button"><img src="images/list.svg" width="16px" height="14px"></button>
             </div>
           </div>
         </header>
-        <ul>
+        <ul class="result_items">
           <li>
             <div>
               <img src="images/catalog1.jpg" alt="Amara Resort & Spa" width="300" height="212">
@@ -96,16 +97,16 @@
             <h3>
               Amara Resort & Spa
             </h3>
-            <div>
-              <div>
+            <div class="desc">
+              <div class="type">
                 Гостиница
               </div>
-              <div>
+              <div class="price">
                 от 4000 ₽
               </div>
             </div>
             <div>
-              <a href="#">Подробнее</a>
+              <a href="#" class="button">Подробнее</a>
               <button type="button">В избранное</button>
             </div>
             <div>
@@ -117,7 +118,7 @@
                 <div><img src="images/star.svg" alt="*" width="18" height="17"></div>
               </div>
               <div>
-                <div>Рейтинг: 8,5</div>
+                <div class="button">Рейтинг: 8,5</div>
               </div>
             </div>
           </li>
@@ -216,9 +217,9 @@
             </div>
           </li>
         </ul>
-        <ul>
-          <li>
-            <a href="#">1</a>
+        <ul class="paging">
+          <li class="selected">
+            1
           </li>
           <li>
             <a href="#">2</a>
@@ -229,7 +230,7 @@
           <li>
             <a href="#">4</a>
           </li>
-          <li>
+          <li class="gap">
             ..
           </li>
           <li>
