@@ -45,9 +45,10 @@ header ul a{
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
+  color: #000;
 }
 
-button, .usual_button, .pseudo_button{
+.button{
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -56,27 +57,36 @@ button, .usual_button, .pseudo_button{
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-
   padding: 5px 10px;
+  height: 36px;
+  box-sizing: border-box;
+  border: 0;
 }
-.usual_button{
+
+.button_huge{
+  height: 52px;
+}
+
+.button_blue{
+  background-color: #82B3D3;
+}
+
+.button_brown{
   background-color: #756157;
 }
-.submit{
-  background-color: #82B3D3;
-}
-.reset_button{
-  background-color: transparent;
-}
-.favorite_button{
-  background-color: #82B3D3;
-}
-.unfavorite_button{
+
+.button_green{
   background-color: #7DB54F;
 }
+
+.button_transparent{
+  background-color: transparent;
+}
+
 .pseudo_button{
   font-weight: normal;
   color: #000;
+  background-color: #F2F2F2;
 }
 
 .visually-hidden{
@@ -167,8 +177,7 @@ section.welcome{
   height: 415px;
 }
 .filter{
-  background: url("../images/bg_filter.jpg") #82B3D3 no-repeat;
-  /* height: 415px; */
+  background: url("../images/bg_filter.jpg") #756157 no-repeat;
   color: #FFF;
 }
 
