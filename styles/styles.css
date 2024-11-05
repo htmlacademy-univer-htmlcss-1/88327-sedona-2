@@ -13,28 +13,67 @@
   src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-/**
- *
- * Описание фоновых параметров (цвет фона, расположение, размер и повторение фонового изображения). У каждого фона должен быть контрастный цвет текста.
-*/
-
 body{
-   font-family: "PT Sans";
+   font-family: "PT Sans", sans-serif;
 }
 
-header ul{
+header{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+main{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+footer{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+header ul li{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+header ul a{
+  text-decoration: none;
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
 }
 
-button, .button, .pseudo_button{
+button, .usual_button, .pseudo_button{
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
-  color: #FFF
-}
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
 
+  padding: 5px 10px;
+}
+.usual_button{
+  background-color: #756157;
+}
+.submit{
+  background-color: #82B3D3;
+}
+.reset_button{
+  background-color: transparent;
+}
+.favorite_button{
+  background-color: #82B3D3;
+}
+.unfavorite_button{
+  background-color: #7DB54F;
+}
 .pseudo_button{
   font-weight: normal;
   color: #000;
@@ -48,6 +87,7 @@ h1{
   font-size: 60px;
   line-height: 78px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 
@@ -55,12 +95,14 @@ h2{
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 section header{
   font-size: 22px;
   line-height: 26px;
   font-weight: normal;
+  width: 100%;
 }
 
 ul li{
@@ -73,6 +115,10 @@ ul li h3{
   font-size: 24px;
   line-height: 28px;
   font-weight: bold;
+  text-transform: uppercase;
+}
+ul.result_items li h3{
+  text-transform: none;
 }
 
 section button{
@@ -100,14 +146,20 @@ section.welcome{
   background: url("../images/bg_index.jpg") no-repeat center;
 
 }
+.params li{
+  display: block;
+  height: 385px;
+  background-color: #82B3D3;
+  color: #000;
+}
 .params .housing{
-  background: url("../images/house.svg") no-repeat center;
+  background: rgba(131, 179, 211, 0.12) url("../images/house.svg") no-repeat center;
 }
 .params .eating{
   background: url("../images/food.svg") no-repeat center;
 }
 .params .souvenir{
-  background: url("../images/souvenir.svg") no-repeat center;
+  background: rgba(131, 179, 211, 0.12) url("../images/souvenir.svg") no-repeat center;
 }
 
 .non_white_subscribe{
@@ -115,8 +167,25 @@ section.welcome{
   height: 415px;
 }
 .filter{
-  background: url("../images/bg_filter.jpg") no-repeat center;
-  height: 415px;
+  background: url("../images/bg_filter.jpg") #82B3D3 no-repeat;
+  /* height: 415px; */
+  color: #FFF;
+}
+
+.advantages li{
+  display: block;
+  height: 385px;
+  background-color: #82B3D3;
+  color: #FFF;
+  overflow: hidden;
+}
+.advantages li.square,.advantages li.tourists{
+  background: rgba(131, 179, 211, 0.12);
+  color: #000;
+}
+.advantages .road{
+  background: rgba(131, 179, 211, 0.20);
+  color: #000;
 }
 
 .white{
@@ -164,11 +233,22 @@ fieldset label{
   line-height: 36px;
   font-weight: bold;
 }
+.paging li{
+  float: left;
+  width: 60px;
+  height: 60px;
+}
 
 .paging .selected, .paging .gap{
   color: #000;
+  background: #F2F2F2;
 }
 
 .paging a{
+  display: block;
   color: #FFF;
+  background: #82B3D3;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
