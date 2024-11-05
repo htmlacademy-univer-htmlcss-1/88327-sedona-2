@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -17,11 +18,11 @@
       <ul>
         <li><button type="button"><img src="images/search.svg" alt="Поиск по сайту" width="18" height="18"></button></li>
         <li><button type="button"><img src="images/heart.svg" alt="Посмотреть список избранного" width="18" height="18"></button></li>
-        <li><button type="button">Хочу сюда</button></li>
+        <li><button type="button" class="button button_brown">Хочу сюда</button></li>
       </ul>
     </header>
     <main>
-      <section>
+      <section class="welcome">
         <h1 class="visually-hidden">Welcome to Sedona</h1>
         <img src="images/welcome.svg" alt="Welcome to Sedona" width="458" height="352">
       </section>
@@ -31,21 +32,21 @@
             заслуживающий большего!</h2>
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </header>
-        <ul>
+        <ul class="advantages">
           <li>
             <h3>Настоящий<br>городок</h3>
             Седона — не аттракцион для туристов, там течёт своя жизнь
             <img src="images/desc_sedona.jpg" alt="Седона городок" width="800" height="385">
           </li>
-          <li>
-            <h3>Небольшая<br>площадь</h3>
-            Все достопримечательности находятся очень близко
+          <li class="square">
+              <h3>Небольшая<br>площадь</h3>
+              Все достопримечательности находятся очень близко
           </li>
-          <li>
+          <li class="road">
             <h3>Красивая<br>дорога</h3>
             Ехать в Седону из Лас-Вегаса совсем не скучно!
           </li>
-          <li>
+          <li class="tourists">
             <h3>Мало<br>туристов</h3>
             Большинство едет в Гранд Каньон и толпится там
           </li>
@@ -61,16 +62,16 @@
           <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           Опытный персонал и качественное обслуживание!
         </header>
-        <ul>
-          <li>
+        <ul class="params">
+          <li class="housing">
             <h3>Жильё</h3>
             Рекомендуем пожить в настоящем мотеле, всё как в кино!
           </li>
-          <li>
+          <li class="eating">
             <h3>Еда</h3>
             Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
           </li>
-          <li>
+          <li class="souvenir">
             <h3>Сувениры</h3>
             Не только китайского, но и настоящего местного производства!
           </li>
@@ -81,16 +82,16 @@
           <h2>Заинтерсовались?</h2>
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </header>
-        <button type="button">Поиск гостиницы в седоне</button>
+        <button type="button" class="button button_brown button_huge">Поиск гостиницы в седоне</button>
       </section>
-      <section>
-        <header>
+      <section class="non_white_subscribe">
+        <header class="white">
           <h2>Подпишитесь на рассылку</h2>
           Только полезная информация и никакого спама, честное бойскаутское!
         </header>
         <form action="https://echo.htmlacademy.ru/">
           <input type="text" value="Ваш e-mail" required>
-          <button type="submit">Поиск гостиницы в седоне</button>
+          <button type="submit" class="button button_blue button_huge">Подписаться</button>
         </form>
       </section>
     </main>

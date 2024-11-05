@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: bold;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body{
+   font-family: "PT Sans", sans-serif;
+}
+
+header{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+main{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+footer{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+header ul li{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+header ul a{
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.button{
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  height: 36px;
+  box-sizing: border-box;
+  border: 0;
+}
+
+.button_huge{
+  height: 52px;
+}
+
+.button_blue{
+  background-color: #82B3D3;
+}
+
+.button_brown{
+  background-color: #756157;
+}
+
+.button_green{
+  background-color: #7DB54F;
+}
+
+.button_transparent{
+  background-color: transparent;
+}
+
+.pseudo_button{
+  font-weight: normal;
+  color: #000;
+  background-color: #F2F2F2;
+}
+
+.visually-hidden{
+  display: none;
+}
+
+h1{
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+h2{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section header{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: normal;
+  width: 100%;
+}
+
+ul li{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+ul li h3{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+ul.result_items li h3{
+  text-transform: none;
+}
+
+section button{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #FFF
+}
+
+input{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+address a{
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: #000
+}
+
+section.welcome{
+  background: url("../images/bg_index.jpg") no-repeat center;
+
+}
+.params li{
+  display: block;
+  height: 385px;
+  background-color: #82B3D3;
+  color: #000;
+}
+.params .housing{
+  background: rgba(131, 179, 211, 0.12) url("../images/house.svg") no-repeat center;
+}
+.params .eating{
+  background: url("../images/food.svg") no-repeat center;
+}
+.params .souvenir{
+  background: rgba(131, 179, 211, 0.12) url("../images/souvenir.svg") no-repeat center;
+}
+
+.non_white_subscribe{
+  background: url("../images/bg_subscribe.jpg") no-repeat center;
+  height: 415px;
+}
+.filter{
+  background: url("../images/bg_filter.jpg") #756157 no-repeat;
+  color: #FFF;
+}
+
+.advantages li{
+  display: block;
+  height: 385px;
+  background-color: #82B3D3;
+  color: #FFF;
+  overflow: hidden;
+}
+.advantages li.square,.advantages li.tourists{
+  background: rgba(131, 179, 211, 0.12);
+  color: #000;
+}
+.advantages .road{
+  background: rgba(131, 179, 211, 0.20);
+  color: #000;
+}
+
+.white{
+  color: #FFF
+}
+
+.navchain li{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+fieldset legend{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+fieldset label{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+}
+
+.manage_list .count{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.manage_list select{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.result_items desc{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.paging{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.paging li{
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+
+.paging .selected, .paging .gap{
+  color: #000;
+  background: #F2F2F2;
+}
+
+.paging a{
+  display: block;
+  color: #FFF;
+  background: #82B3D3;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
