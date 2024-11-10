@@ -13,41 +13,83 @@
   src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+html{
+  height: 100%;
+}
 body{
-   font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
 }
-
-header{
+.footer{
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  padding: 0 70px;
+  box-sizing: border-box;
+  align-items: center;
 }
-
-main{
+.header_container{
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  width: 1200px;
+  box-sizing: border-box;
+  padding: 0 70px;
+  display: flex;
+  height: 64px;
+  z-index: 1;
 }
-
-footer{
+.main_container{
+  z-index: 0;
+  flex-grow: 1;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
-header ul li{
+.header_menu_wrapper{
+  flex-grow:1;
+  padding: 0;
+}
+.header_menu{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.header_menu li{
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
+  padding: 0 16px;
+  align-content: center;
 }
-header ul a{
+.header_menu a{
   text-decoration: none;
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
   color: #000;
 }
-
+.header_submenu{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header_submenu  li{
+  padding: 0 12px;
+  align-content: center;
+}
 .button{
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -66,7 +108,10 @@ header ul a{
 .button_huge{
   height: 52px;
 }
-
+.button_img{
+  border: 0;
+  background: none;
+}
 .button_blue{
   background-color: #82B3D3;
 }
@@ -154,11 +199,23 @@ address a{
 
 section.welcome{
   background: url("../images/bg_index.jpg") no-repeat center;
+  height: 485px;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.params{
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 .params li{
   display: block;
   height: 385px;
+  width: 400px;
   background-color: #82B3D3;
   color: #000;
 }
@@ -179,14 +236,29 @@ section.welcome{
 .filter{
   background: url("../images/bg_filter.jpg") #756157 no-repeat;
   color: #FFF;
+  padding: 35px 70px 70px 70px;
+}
+.filter h1{
+  padding:0;
+  margin:0;
 }
 
+.advantages{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
 .advantages li{
   display: block;
   height: 385px;
+  width: 400px;
   background-color: #82B3D3;
   color: #FFF;
   overflow: hidden;
+}
+.advantages li.big{
+  width: 800px;
 }
 .advantages li.square,.advantages li.tourists{
   background: rgba(131, 179, 211, 0.12);
@@ -201,28 +273,75 @@ section.welcome{
   color: #FFF
 }
 
+.breadcrumbs{
+  display: flex;
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+.breadcrumbs li{
+  padding-right: 7px;
+}
+.breadcrumbs li+li:before{
+  content: ">"; /*todo: заменить на картинку?*/
+  padding-right: 7px;
+}
+
 .navchain li{
   font-size: 16px;
   line-height: 21px;
   font-weight: normal;
 }
 
-fieldset legend{
+.filter_form{
+  display: flex;
+}
+.filter_form fieldset{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-right: 60px;
+}
+.filter_form fieldset.big{
+  flex-grow: 1;
+  padding-right: 0;
+  padding-left: 60px;
+}
+.filter_form fieldset.big .price{
+  display: flex;
+}
+.filter_form fieldset.big .price input{
+  width: 143px;
+}
+
+.filter_form fieldset.buttons{
+  width: 191px;
+  padding: 0;
+}
+
+.filter_form fieldset legend{
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
+  padding: 0;
 }
 
-fieldset label{
+.filter_form fieldset label{
   font-size: 18px;
   line-height: 23px;
   font-weight: normal;
+}
+.manage_list{
+  display: flex;
 }
 
 .manage_list .count{
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
+  flex-grow: 1;
 }
 
 .manage_list select{
@@ -241,9 +360,11 @@ fieldset label{
   font-size: 20px;
   line-height: 36px;
   font-weight: bold;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 .paging li{
-  float: left;
   width: 60px;
   height: 60px;
 }
@@ -260,4 +381,24 @@ fieldset label{
   text-decoration: none;
   width: 100%;
   height: 100%;
+}
+
+.footer_links{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.footer_links li a{
+  /* padding: 0 10px; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer address{
+  flex-grow: 1;
+  text-align: center;
 }
