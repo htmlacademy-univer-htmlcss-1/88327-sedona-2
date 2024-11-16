@@ -55,7 +55,7 @@ body{
   margin-right: auto;
   width: 1200px;
   box-sizing: border-box;
-  padding: 0 70px;
+  /* padding: 0 70px; */
   display: flex;
   flex-direction: column;
   background: #FFF;
@@ -206,11 +206,18 @@ address a{
 section.welcome{
   background: url("../images/bg_index.jpg") no-repeat center;
   height: 485px;
+  box-sizing: border-box;
   text-align: center;
-  justify-content: space-around;
+  padding-top: 50px;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.divider{
+  background: url("../images/divider.png") no-repeat center;
+  height: 57px;
+  width: 100%;
 }
 
 .params{
@@ -243,13 +250,14 @@ section.welcome{
   background: url("../images/bg_filter.jpg") #756157 no-repeat;
   color: #FFF;
   padding: 35px 70px 70px 70px;
-  margin: 0 -70px;
 }
 .filter h1{
   padding:0;
   margin:0;
 }
-
+.results{
+  padding: 0 70px;
+}
 .advantages{
   display: flex;
   flex-wrap: wrap;
@@ -342,6 +350,7 @@ section.welcome{
 }
 .manage_list{
   display: flex;
+  justify-content: space-between;
 }
 
 .manage_list .count{
@@ -355,6 +364,17 @@ section.welcome{
   font-size: 18px;
   line-height: 21px;
   font-weight: normal;
+}
+.sort_and_view select{
+  margin-right: 70px;
+  height: 49px;
+  width: 292px;
+}
+.sort_and_view button{
+  margin-right: 8px;
+}
+.sort_and_view button:nth-last-child(1){
+  margin-right: 0;
 }
 
 .result_items desc{
