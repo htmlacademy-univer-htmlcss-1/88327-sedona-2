@@ -6,31 +6,31 @@
     <title>HTML Academy: Седона. Каталог</title>
   </head>
   <body>
-    <header>
-      <a href="index.html"><img src="images/logo.png" alt="Логотип города Седона" width="140" height="70"></a>
-      <nav>
-        <ul>
+    <header class="header_container">
+      <div><a href="index.html"><img src="images/logo.png" alt="Логотип города Седона" width="140" height="70"></a></div>
+      <nav class="header_menu_wrapper">
+        <ul class="header_menu">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">О Седоне</a></li>
           <li>Гостиницы</li>
         </ul>
       </nav>
-      <ul>
-        <li><button type="button"><img src="images/search.svg" alt="Поиск по сайту" width="18" height="18"></button></li>
-        <li><button type="button"><img src="images/heart.svg" alt="Посмотреть список избранного" width="18" height="18"></button></li>
+      <ul class="header_submenu">
+        <li><button type="button" class="button_img"><img src="images/search.svg" alt="Поиск по сайту" width="18" height="18"></button></li>
+        <li><button type="button" class="button_img"><img src="images/heart.svg" alt="Посмотреть список избранного" width="18" height="18"></button></li>
         <li><button type="button" class="button button_brown">Хочу сюда</button></li>
       </ul>
     </header>
-    <main>
+    <main class="main_container">
       <section class="filter">
         <header>
           <h1>Гостиницы Седона</h1>
-          <ul>
+          <ul class="breadcrumbs">
             <li><img src="images/home.svg" alt="Главная" width="12" height="12"></li>
             <li>Гостиницы</li>
           </ul>
         </header>
-        <form action="https://echo.htmlacademy.ru/">
+        <form action="https://echo.htmlacademy.ru/" class="filter_form">
           <fieldset>
             <legend>Инфраструктура</legend>
             <label>
@@ -61,32 +61,35 @@
               Апартаменты
             </label>
           </fieldset>
-          <fieldset>
+          <fieldset class="big">
             <legend>Стоимость, ₽:</legend>
-            <input type="text" name="price_from">
-            <input type="text" name="price_to">
+            <div class="price">
+              <input type="text" name="price_from">
+              <input type="text" name="price_to">
+            <div>
             <div></div>
+          </fieldset>
+          <fieldset class="buttons">
+            <legend>&nbsp;</legend>
             <button type="submit" class="button button_blue">Применить</button>
             <button type="reset" class="button button_transparent">Сбросить</button>
           </fieldset>
         </form>
       </section>
-      <section>
-        <header>
+      <section class="results">
+        <header class="manage_list">
           <h2 class="visually-hidden">Результаты поиска</h2>
-          <div class="manage_list">
-            <div class="count">Найдено: 38</div>
-            <div>
-              <select>
-                <option value="price_asc">Сначала дешевле</option>
-                <option value="price_desc">Сначала дороже</option>
-                <option value="sale_desc">По величине скидки</option>
-                <option value="popularity_desc">По популярности</option>
-              </select>
-              <button type="button"><img src="images/tile.svg" width="16px" height="14px"></button>
-              <button type="button"><img src="images/large.svg" width="16px" height="14px"></button>
-              <button type="button"><img src="images/list.svg" width="16px" height="14px"></button>
-            </div>
+          <div class="count">Найдено гостиниц: 38</div>
+          <div class="sort_and_view">
+            <select>
+              <option value="price_asc">Сначала дешевле</option>
+              <option value="price_desc">Сначала дороже</option>
+              <option value="sale_desc">По величине скидки</option>
+              <option value="popularity_desc">По популярности</option>
+            </select>
+            <button type="button"><img src="images/tile.svg" width="16px" height="14px"></button>
+            <button type="button"><img src="images/large.svg" width="16px" height="14px"></button>
+            <button type="button"><img src="images/list.svg" width="16px" height="14px"></button>
           </div>
         </header>
         <ul class="result_items">
@@ -249,9 +252,9 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <h2 class="visually-hidden">Соцсети</h2>
-      <ul>
+      <ul class="footer_links">
         <li><a href="#"><img src="images/vk.svg" alt="Vk" width="24" height="14"></a></li>
         <li><a href="#"><img src="images/telegram.svg" alt="Tg" width="18" height="15"></a></li>
         <li><a href="#"><img src="images/youtube.svg" alt="youtube" width="22" height="17"></a></li>
@@ -263,6 +266,6 @@
       <div>
           <img src="images/html_academy_logo.svg" alt="Лого академии" width="115" height="33">
         </div>
-  </footer>
+    </footer>
   </body>
 </html>
