@@ -31,8 +31,7 @@ body{
   max-width: 1200px;
   display: flex;
   width: 1200px;
-  height: 120px;
-  padding: 0 70px;
+  padding: 45px 70px 35px 70px;
   box-sizing: border-box;
   align-items: center;
   background: #FFF;
@@ -460,13 +459,14 @@ section.column_center header{
   line-height: 60px;
   border-radius: 4px;
 }
-
 .footer_links{
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
   list-style: none;
+  flex-wrap: wrap;
+  flex-basis: 160px;
 }
 .footer_links li a{
   width: 40px;
